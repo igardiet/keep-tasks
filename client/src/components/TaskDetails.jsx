@@ -14,7 +14,7 @@ export const TaskDetails = ({ task }) => {
     }
 
     const response = await fetch(
-      'http://localhost:3027/api/tasks/' + task._id,
+      'http://localhost:3000/api/tasks/' + task._id,
       {
         method: 'DELETE',
         headers: {

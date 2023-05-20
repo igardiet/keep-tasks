@@ -21,7 +21,7 @@ export const TaskForm = () => {
     }
 
     const task = { title, note, comment };
-    const response = await fetch('http://localhost:3027/api/tasks', {
+    const response = await fetch('http://localhost:3000/api/tasks', {
       method: 'POST',
       body: JSON.stringify(task),
       headers: {
