@@ -10,7 +10,7 @@ export const Home = () => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch('http://localhost:3027/api/tasks', {
+      const response = await fetch('http://localhost:3000/api/tasks', {
         headers: {
           'Authorization': `Bearer ${user.token}`,
         },
