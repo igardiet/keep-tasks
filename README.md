@@ -44,5 +44,11 @@ Requirements for the software and other tools to build, test and push
 - JavaScript Language for the logic
 - React library: For UI components and state management
 
+## Coming soon
+- auth0 authentication
+- jest tests
+- railway and netlify deploy
+- cloudinary for profile pictures
+
 ## Author
 - <a href="https://github.com/igardiet">Iñaki García</a>
