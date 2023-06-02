@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { useTasksContext } from '../hooks/useTasksContext';
-import { useAuthContext } from '../hooks/useAuthContext';
+import { useTasksContext, useAuthContext } from '../hooks';
 
 export const TaskForm = () => {
   const { dispatch } = useTasksContext();
@@ -26,7 +25,7 @@ export const TaskForm = () => {
       body: JSON.stringify(task),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${user.token}`,
+        Authorization: `Bearer ${user.token}`,
       },
     });
     const json = await response.json();
