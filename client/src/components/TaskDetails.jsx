@@ -1,8 +1,7 @@
 import { FaTrashAlt } from 'react-icons/fa';
 import { GrEdit } from 'react-icons/gr';
-import { useTasksContext } from '../hooks/useTasksContext';
-import { useAuthContext } from '../hooks/useAuthContext';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'; // date
+import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import { useTasksContext, useAuthContext } from '../hooks';
 
 export const TaskDetails = ({ task }) => {
   const { dispatch } = useTasksContext();
@@ -18,7 +17,7 @@ export const TaskDetails = ({ task }) => {
       {
         method: 'DELETE',
         headers: {
-          'Authorization': `Bearer ${user.token}`,
+          Authorization: `Bearer ${user.token}`,
         },
       }
     );
