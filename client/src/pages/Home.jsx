@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
-import { useTasksContext } from '../hooks/useTasksContext';
-import { useAuthContext } from '../hooks/useAuthContext';
-import { TaskDetails } from '../components/TaskDetails';
-import { TaskForm } from '../components/TaskForm';
+import { useTasksContext, useAuthContext } from '../hooks';
+import { TaskDetails, TaskForm } from '../components';
 
 export const Home = () => {
   const { tasks, dispatch } = useTasksContext();
@@ -12,7 +10,7 @@ export const Home = () => {
     const fetchTasks = async () => {
       const response = await fetch('http://localhost:3000/api/tasks', {
         headers: {
-          'Authorization': `Bearer ${user.token}`,
+          Authorization: `Bearer ${user.token}`,
         },
       });
       const json = await response.json();
