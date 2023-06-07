@@ -18,7 +18,8 @@ For more info look up the package.json files
 
 ## Getting Started and installing
 
-#### Follow these steps in terminal after cloning this repository
+### Follow these steps in terminal after cloning this repository
+#### Remember you need to clone and start the server side repository to view the full app
 1. yarn
 2. yarn start
 
