@@ -11,7 +11,7 @@ export const useLogin = () => {
     setError(null);
 
     const response = await fetch(
-      `http://localhost:3000/api/user/login`,
+      `${import.meta.env.VITE_APP_API_URL}/api/user/login`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
