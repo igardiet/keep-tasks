@@ -8,11 +8,14 @@ export const Home = () => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch('http://localhost:3000/api/tasks', {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-        },
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_APP_API_URL}/api/tasks`,
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) {

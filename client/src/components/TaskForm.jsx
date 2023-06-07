@@ -20,14 +20,17 @@ export const TaskForm = () => {
     }
 
     const task = { title, note, comment };
-    const response = await fetch('http://localhost:3000/api/tasks', {
-      method: 'POST',
-      body: JSON.stringify(task),
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      `${import.meta.env.VITE_APP_API_URL}/api/tasks`,
+      {
+        method: 'POST',
+        body: JSON.stringify(task),
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {
