@@ -1,4 +1,4 @@
-# Keep Tasks MERN App
+# <a href="https://keep-tasks.netlify.app/">Keep Tasks</a>
 Todo CRUD list containing:
 - Home, login and signup routes
 - React hooks for state change
@@ -49,4 +49,4 @@ Requirements for the software and other tools to build, test and push
 - cloudinary for profile pictures
 
 ## Author
-- <a href="https://github.com/igardiet">Iñaki García</a>
+<a href="https://github.com/igardiet">Iñaki García</a>
