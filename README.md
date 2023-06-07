@@ -19,11 +19,8 @@ For more info look up the package.json files
 ## Getting Started and installing
 
 #### Follow these steps in terminal after cloning this repository
-1. npm i
-2. cd server
-3. npm start
-4. NEW TERMINAL WINDOW: cd client
-5. npm start (copy given link on web browser)
+1. yarn
+2. yarn start
 
 ## Prerequisites
 
@@ -33,9 +30,9 @@ Requirements for the software and other tools to build, test and push
 - [nodemon] npm i -g nodemon
 
 ## Preview
-![Login page preview](/client/assets/login.png)
+![Login page preview](/assets/login.png)
 
-![Home page preview](/client/assets/home.png)
+![Home page preview](/assets/home.png)
 
 ## Technologies
 - React Vite app
